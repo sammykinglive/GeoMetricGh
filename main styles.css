@@ -1,0 +1,365 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Custom styles for the header */
+  .header {
+    background-color: #f8f9fa;
+    padding: 0 50px;
+  }
+  
+  .navbar-brand img {
+    height: 30px; /* Adjust the height as needed */
+  }
+  
+  .navbar-cta {
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 6px 12px;
+    background-color: #22817d;
+    border-radius: 20px;
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px; /* Adjust the spacing between navigation items */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #555;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    header {
+        
+        padding: 0 0px;
+      }
+    
+    
+    .navbar-nav {
+      margin-top: 10px;
+    }
+    
+    .navbar-toggler {
+      border-color: #333;
+    }
+  
+    .navbar-toggler-icon {
+      background-color: #333;
+    }
+  }
+  
+
+
+
+
+
+
+
+  .hero-section {
+    background-image: url("images/image\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    text-align: center;
+    height: 300px;
+    border-radius: 0px;
+    margin: 0 0px;
+    
+  }
+
+
+  
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        height: 200px;
+        padding: 30px;
+        
+    }
+
+
+
+}
+
+
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .hero-section {
+      height: 300px;
+      
+    }
+  
+
+  
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 150px;
+  }
+  
+  .about-content {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
+  .about-content h1 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #464646;
+  }
+
+
+  .edit-one{
+    color: rgb(9, 134, 97); 
+    
+    font-family: 'Roboto Mono', monospace;
+    animation: blink 1s infinite;
+  }
+
+  .edit-two{
+    color: rgb(77, 65, 3); 
+    
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+  .about-p {
+    margin-bottom: 20px;
+  }
+  
+  .about-p .bullet-points {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0 ;
+    
+  }
+  
+  .about-p .bullet-points i {
+    margin-right: 0.5em;
+    font-size: 24px;
+    color: #22817d;
+   
+  }
+  
+  .about-p .edit-header {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .animate {
+    width: 500px; /* Adjust the width as per your requirements */
+    overflow: hidden;
+    
+  }
+  
+  #rolling-image {
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.438);
+    position: relative;
+    animation-name: rollAnimation;
+    animation-duration: 7s; /* Animation duration in seconds */
+    animation-timing-function: linear; /* Use a linear timing function */
+    animation-iteration-count: infinite; /* Repeat the animation infinitely */
+    animation-direction: alternate; /* Reverse the animation after reaching the end */
+    transform-origin: center center; /* Set the rotation origin to the center of the image */
+  }
+  
+  @keyframes rollAnimation {
+    0% {
+      transform: rotate(0deg); /* Initial rotation angle */
+    }
+    100% {
+      transform: rotate(360deg); /* Final rotation angle */
+    }
+
+    0% {
+      left: -20%; /* Initial position outside the div */
+    }
+    100% {
+      left: 100%; /* Final position at the right end of the div */
+    }
+  }
+    
+  
+  
+  
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #22817d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    
+    transition: background-color 0.8s ease;
+    border-radius: 50px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.356);
+  }
+
+  .cta-button:hover{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #22817d;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .image-item {
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  
+  
+
+  .image-item img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.438);
+  }
+  
+  
+.image-item-1 img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+  }
+  
+  .image-item-2 img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+  }
+
+  .about-item-team {
+    text-align: center;
+    
+    border-radius: 30px;
+    width:200px ;
+    align-self: center;
+    border: 1px solid #22817d;
+    
+  }
+
+  .about-item-services {
+    text-align: center;
+    background-color: #6d6605a6;
+    border-radius: 30px;
+    width:200px ;
+    align-self: center;
+    border: 1px solid #22817d;
+    color: #ffffff;
+
+  }
+  
+  
+  .about-grid h1 {
+    font-size: 24px;
+    text-align: left;
+    padding: 40px;
+    margin: 50px 0px;
+  }
+
+
+  
+
+
+    
+
+  @media only screen and (max-width: 768px) {
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+    }
+  
+    .about-content {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      
+    }
+
+    .about-item-team {
+        text-align: center;
+        width:150px ;
+        align-self: center;
+ 
+        
+      }
+  
+    .about-grid h1 {
+      font-size: 20px;
+      padding: 20px;
+    }
+  
+    .image-item-1 img,
+    .image-item-2 img {
+      width: 100%;
+      height: auto;
+    }
+
+    .animate {
+      width: 100%; /* Adjust the width as per your mobile design requirements */
+    }
+
+
+  }
