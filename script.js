@@ -69,3 +69,48 @@ $(document).ready(function() {
 
 
 
+
+
+//script for collapse chevron in mobile display
+
+
+
+
+
+
+
+
+
+
+function toggleDropdown(header) {
+  var dropdown = header.parentNode;
+  dropdown.classList.toggle('open');
+}
+
+
+
+
+
+
+
+
+
+
+// JavaScript function for toggling dropdown
+function toggleDropdown(element) {
+  const paragraph = element.nextElementSibling; // Get the sibling <p> element
+  const icon = element.querySelector('.dropdown-icon i'); // Get the chevron icon
+
+  if (paragraph.style.maxHeight) {
+    paragraph.style.maxHeight = null;
+    icon.classList.remove('fa-chevron-up');
+    icon.classList.add('fa-chevron-down');
+    element.parentElement.classList.remove('active');
+  } else {
+    paragraph.style.maxHeight = paragraph.scrollHeight + 'px';
+    icon.classList.remove('fa-chevron-down');
+    icon.classList.add('fa-chevron-up');
+    element.parentElement.classList.add('active');
+  }
+}
+
